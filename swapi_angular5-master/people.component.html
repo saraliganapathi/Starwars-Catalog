@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+
+<!--<pre>-->
+<!--  {{ categories | json }}-->
+<!--</pre>-->
+
+
+<!--<a [routerLink]="['/product/',product.id]"></a>-->
+<div *ngFor="let character of people; index as i">
+    <a href="/{{people[i]}}">{{people[i]}}</a>
+<!--    <button> {{categories[i]}} </button>-->
+</div>
+
+

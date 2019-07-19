@@ -1,0 +1,17 @@
+<base href="/">
+
+<hello name="{{ name }}"></hello>
+
+<!--<pre>-->
+<!--  {{ categories | json }}-->
+<!--</pre>-->
+
+
+<!--<a [routerLink]="['/product/',product.id]"></a>-->
+<div *ngFor="let category of categories; index as i">
+    <a href="/{{categories[i]}}">{{categories[i]}}</a>
+
+<!--    <button> {{categories[i]}} </button>-->
+</div>
+
+
